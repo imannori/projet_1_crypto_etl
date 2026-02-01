@@ -1,26 +1,26 @@
 # Crypto ETL Pipeline (CoinGecko → PostgreSQL)
 
-## 🎯 Objective
+## Objective
 Build a simple Data Engineering pipeline that fetches Bitcoin and Ethereum prices from the CoinGecko API and stores them in a PostgreSQL database.
 
-## 🧱 Tech stack
+## Tech stack
 - Python (requests, psycopg2)
 - PostgreSQL (Docker)
 - Docker Compose
 - Logging (file + console)
 
-## 📌 Features
+## Features
 - Fetch BTC / ETH prices from CoinGecko
 - Store data into PostgreSQL table: `crypto_prices`
 - Logs saved in `logs/etl.log`
 
-## 🗂️ Project structure
+## Project structure
 - `src/` : Python scripts (ETL)
 - `sql/` : SQL scripts (tables)
 - `logs/` : generated logs
 - `docker-compose.yml` : PostgreSQL container
 
-## ▶️ How to run (local)
+## ▶How to run (local)
 ### 1) Start PostgreSQL
 ```bash
 docker compose up -d
@@ -35,7 +35,7 @@ python src/etl_crypto.py
 ```
 
 
-## ✅ Example output (PostgreSQL)
+## Example output (PostgreSQL)
 After running the ETL:
 
 ```sql
